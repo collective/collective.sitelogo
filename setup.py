@@ -32,5 +32,6 @@ setup(
     install_requires=[
         'setuptools',
         'Products.CMFPlone',
+        'plone.formwidget.namedfile >= 1.0.12'
     ],
 )
