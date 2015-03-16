@@ -37,6 +37,23 @@
       layer="collective.sitelogo.interfaces.IThemeSpecific"
       permission="plone.app.controlpanel.Site"
       />
+  <configure zcml:condition="installed collective.lineage">
+    <browser:page
+        name="sitelogo-controlpanel"
+        for="collective.lineage.interfaces.IChildSite"
+        class=".controlpanel.SiteControlPanel"
+        layer="collective.sitelogo.interfaces.IThemeSpecific"
+        permission="plone.app.controlpanel.Site"
+        />
+  </configure>
+
+  <browser:page
+      name="sitelogo_utils"
+      for="*"
+      class=".utils.SiteLogoUtilsView"
+      allowed_attributes="controlpanel_url"
+      permission="plone.app.controlpanel.Site"
+      />
 
   <genericsetup:registerProfile
       name="default"

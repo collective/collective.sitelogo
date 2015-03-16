@@ -7,7 +7,7 @@
       category="Products" 
       condition_expr=""
       icon_expr="string:$portal_url/logoIcon.png"
-      url_expr="string:${portal_url}/@@sitelogo-controlpanel"
+      url_expr="context/@@sitelogo_utils/controlpanel_url"
       visible="True"
       i18n:attributes="title">
     <permission>Plone Site Setup: Site</permission>
