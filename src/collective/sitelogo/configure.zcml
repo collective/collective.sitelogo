@@ -22,13 +22,21 @@
   <configure package="plone.app.layout.viewlets">
     <browser:viewlet
         name="plone.logo"
-        manager="collective.sitelogo.interfaces.IPortalHeader"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class="collective.sitelogo.viewlet.LogoViewlet"
         template="logo.pt"
         layer="collective.sitelogo.interfaces.IThemeSpecific"
         permission="zope.Public"
         />
   </configure>
+
+  <browser:page
+      name="sitelogo-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SiteControlPanel"
+      layer="collective.sitelogo.interfaces.IThemeSpecific"
+      permission="plone.app.controlpanel.Site"
+      />
 
   <genericsetup:registerProfile
       name="default"

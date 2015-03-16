@@ -11,12 +11,11 @@ class LogoViewlet(ViewletBase):
     def update(self):
         super(LogoViewlet, self).update()
 
-        # TODO: should this be changed to settings.site_title?
         self.navigation_root_title = self.portal_state.navigation_root_title()
+        logo_title = self.portal_state.portal_title()
 
         registry = getUtility(IRegistry)
         settings = registry.forInterface(ISiteLogoSchema, prefix="plone")
-        logo_title = settings.site_title
 
         if getattr(settings, 'site_logo', False):
             filename, data = b64decode_file(settings.site_logo)
