@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.1 (unreleased)
-----------------
+1.0.1 (unreleased)
+------------------
 
-- Nothing changed yet.
+- Fix controlpanel url.
+  [thet]
 
 
 1.0 (2015-07-15)
