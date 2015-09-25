@@ -7,9 +7,10 @@ from plone.formwidget.namedfile.widget import NamedImageFieldWidget
 
 class SiteLogoControlPanelForm(controlpanel.RegistryEditForm):
 
-    id = "SiteControlPanel"
-    label = _(u"Site settings")
-    description = _("Site-wide settings.")
+    id = "SiteLogoControlPanel"
+    label = _('label_site_logo_controlpanel', default=u"Site logo settings")
+    description = _(
+        'help_site_logo_controlpanel', default=u"Define a portal logo.")
     schema = ISiteLogoSchema
     schema_prefix = "plone"
 

@@ -4,6 +4,9 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
+- Add German translations.
+  [thet]
+
 - Fix controlpanel url.
   [thet]
 

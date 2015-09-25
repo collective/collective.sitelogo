@@ -11,7 +11,10 @@ class IThemeSpecific(Interface):
 class ISiteLogoSchema(Interface):
 
     site_logo = schema.ASCII(
-        title=_(u"Site Logo"),
-        description=_(u"This shows a custom Logo on your Site."),
+        title=_('label_site_logo', default=u"Site Logo"),
+        description=_(
+            'help_site_logo',
+            default=u"This shows a custom Logo on your Site."
+        ),
         required=False,
     )
