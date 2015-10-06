@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.1 (unreleased)
-----------------
+1.0.2 (unreleased)
+------------------
 
-- Nothing changed yet.
+- Include ``plone.app.controlpanel`` ``permissions.zcml``, so that the ``Site``
+  permission is available. Fixes #2.
+  [thet]
 
 
 1.0.1 (2015-09-25)
