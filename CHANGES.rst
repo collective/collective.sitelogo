@@ -4,7 +4,17 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added Spanish translations.
+  [macagua]
+
+- Updated German translations.
+  [macagua]
+
+- Updated the build-i18n.sh file wiht plone domain.
+  [macagua]
+
+- Updated i18n support.
+  [macagua]
 
 
 1.0.2 (2015-10-06)
