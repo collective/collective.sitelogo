@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-09-25 08:53+0000\n"
+"POT-Creation-Date: 2015-10-08 16:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.sitelogo\n"
+
+#: collective/sitelogo/profiles/default/controlpanel.xml
+msgid "Site Logo"
+msgstr ""
 
 #. Default: "This shows a custom Logo on your Site."
 #: collective/sitelogo/interfaces.py:15
