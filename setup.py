@@ -34,4 +34,10 @@ setup(
         'Products.CMFPlone',
         'plone.formwidget.namedfile >= 1.0.12'
     ],
+    entry_points="""
+    # -*- Entry points: -*-
+
+    [z3c.autoinclude.plugin]
+    target = plone
+    """,
 )
