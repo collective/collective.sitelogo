@@ -4,6 +4,15 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Updated information about this package.
+  [macagua]
+
+- Apply QA metrics from plone.recipe.codeanalysis recipe.
+  [macagua]
+
+- Added support for z3c.autoinclude plugin.
+  [macagua]
+
 - Added Spanish translations.
   [macagua]
 
