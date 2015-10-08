@@ -1,4 +1,5 @@
-from .interfaces import ISiteLogoSchema
+# -*- coding: utf-8 -*-
+from collective.sitelogo.interfaces import ISiteLogoSchema
 from plone.formwidget.namedfile.converter import b64decode_file
 from plone.namedfile.browser import Download
 from plone.namedfile.file import NamedImage
@@ -14,7 +15,7 @@ class SiteLogo(Download):
         self.data = None
 
         registry = getUtility(IRegistry)
-        settings = registry.forInterface(ISiteLogoSchema, prefix="plone")
+        settings = registry.forInterface(ISiteLogoSchema, prefix='plone')
         if getattr(settings, 'site_logo', False):
             filename, data = b64decode_file(settings.site_logo)
             data = NamedImage(data=data, filename=filename)

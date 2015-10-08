@@ -1,4 +1,5 @@
-from . import msgFact as _
+# -*- coding: utf-8 -*-
+from collective.sitelogo import msgFact as _
 from zope import schema
 from zope.interface import Interface
 
@@ -11,10 +12,10 @@ class IThemeSpecific(Interface):
 class ISiteLogoSchema(Interface):
 
     site_logo = schema.ASCII(
-        title=_('label_site_logo', default=u"Site Logo"),
+        title=_('label_site_logo', default=u'Site Logo'),
         description=_(
             'help_site_logo',
-            default=u"This shows a custom Logo on your Site."
+            default=u'This shows a custom Logo on your Site.'
         ),
         required=False,
     )

@@ -1,4 +1,5 @@
-from .interfaces import ISiteLogoSchema
+# -*- coding: utf-8 -*-
+from collective.sitelogo.interfaces import ISiteLogoSchema
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.formwidget.namedfile.converter import b64decode_file
 from plone.namedfile.file import NamedImage
@@ -15,7 +16,7 @@ class LogoViewlet(ViewletBase):
         logo_title = self.portal_state.portal_title()
 
         registry = getUtility(IRegistry)
-        settings = registry.forInterface(ISiteLogoSchema, prefix="plone")
+        settings = registry.forInterface(ISiteLogoSchema, prefix='plone')
 
         if getattr(settings, 'site_logo', False):
             filename, data = b64decode_file(settings.site_logo)
