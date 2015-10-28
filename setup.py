@@ -31,7 +31,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'plone.api==1.3.3',
+        'plone.api',
         'Products.CMFPlone',
         'plone.formwidget.namedfile >= 1.0.12'
     ],
